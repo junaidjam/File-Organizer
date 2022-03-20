@@ -84,6 +84,7 @@ function copyFileToDest(srcPath,fullPathOfFile,folderName) {
 
 }
 
+
 // let srcPath = "F:\\(4)-NOG\\File Organizer\\downloads"
 // organize(srcPath);
 
