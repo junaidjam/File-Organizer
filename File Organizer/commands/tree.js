@@ -10,18 +10,23 @@ function treeFn(dirPath){
 
     let doesExist = fs.existsSync(dirPath);
     if(doesExist == true){
-        treeHelper(dirPath," ");
+        treeHelper(dirPath, " ");
     }
 }
 
 function treeHelper(targetPath, indent){
-    let isFile = fs.lstatSync(targetPath);
+    let isFile = fs.lstatSync(targetPath).isFile();
     if(isFile == true){
         let fileName = path.basename(targetPath)
         console.log(indent + "├── " + fileName);
         return;
     }
+
+    let dirName = path.basename(targetPath);
+    console.log(indent + "└──" + dirName);
+
+    
 }
 
-let dirPath = " "
+let dirPath = "F:\\(5)-POG\\FILE_ORGANIZER\\File Organizer\\downloads"
 treeFn(dirPath);
