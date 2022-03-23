@@ -88,6 +88,7 @@ function copyFileToDest(srcPath, fullPathOfFile, folderName) {
                       // src        dest
   fs.copyFileSync(fullPathOfFile, destFileName);
   //magic
+  fs.unlinkSync(fullPathOfFile)
 }
 
 
