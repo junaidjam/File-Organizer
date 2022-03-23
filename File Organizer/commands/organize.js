@@ -91,9 +91,9 @@ function copyFileToDest(srcPath, fullPathOfFile, folderName) {
 }
 
 
-let srcPath="F:\\(5)-POG\\FILE_ORGANIZER\\File Organizer\\downloads"
-organize(srcPath);
+// let srcPath="F:\\(5)-POG\\FILE_ORGANIZER\\File Organizer\\downloads"
+// organize(srcPath);
 
-// module.exports = {
-//   organize:organize
-// }
+module.exports = {
+  organize:organize
+}
